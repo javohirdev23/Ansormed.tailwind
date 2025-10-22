@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://demo-ansormed.netlify.app/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://demo-ansormed.netlify.app/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://demo-ansormed.netlify.app/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://demo-ansormed.netlify.app/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="AnsorMed" />
+    <link
+      rel="manifest"
+      href="https://demo-ansormed.netlify.app/site.webmanifest"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ansormed</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#fff] dark:bg-[white]">
+    <header
+      class="h-[100px] flex items-center content-center relative dark:bg-[#FFFFFF]"
+    >
+      <div
+        class="w-[100%] max-w-[1100px] m-auto flex items-center justify-between px-5"
+      >
+        <a href="#" class="flex items-center gap-4">
+          <img
+            class="rounded-full"
+            src="./img/logo.png"
+            alt="logo"
+            width="185px"
+            height="50px"
+          />
+          <p
+            class="text-[25px] hover:text-[#de2e54] tansition-color duration-300 font-[Open_sans] font-semibold dark:text-[#fff]"
+          >
+            AnsorMed
+          </p>
+        </a>
+        <nav
+          class="hidden absolute gap-8 py-20 z-2 bg-[#fff] left-[0] top-[100px] items-center flex-col w-[100%] md:static md:w-[auto] md:py-[0] md:bg-transparent md:flex md:flex-row dark:bg-[#FFFFFF]"
+          id="navbar"
+        >
+          <a
+            href="#"
+            class="text-[15px] font-[Open_sans] tracking-[2px] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold dark:text-[black]"
+            >xizmatlar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] font-[Open_sans] tracking-[2px] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold dark:text-[black]"
+            >dorilar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] font-[Open_sans] tracking-[2px] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold dark:text-[black]"
+            >asal</a
+          >
+          <a
+            href="#"
+            class="text-[15px] font-[Open_sans] tracking-[2px] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold dark:text-[black]"
+            >kontaktlar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] font-[Open_sans] tracking-[2px] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold dark:text-[#0000]"
+            >blog</a
+          >
+        </nav>
+
+        <a
+          href="#"
+          class="text-[15px] text-white bg-[#de2e54] px-[24px] py-[10px] rounded-[8px] font-[Open_sans_condensed] tracking-[2px] hover:bg-[#eb8298] tansition-color duration-300 hidden lg:flex"
+          >QABULGA YOZILISH</a
+        >
+
+        <label
+          class="cursor-pointer flex items-center justify-center md:hidden w-[50px] h-[50px]"
+          for="toggler"
+        >
+          <input
+            class="hidden"
+            type="checkbox"
+            id="toggler"
+            onclick="toggler(this)"
+          />
+          <i class="fa fa-bars text-[25px] text-[#222] dark:text-white"></i>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="bg-[#0eb4c1] min-h-[400px] flex mb-25 overflow-hidden dark:bg-[#0EB4C1]"
+      >
+        <div
+          class="w-[100%] h-[100%] max-w-[1100px] m-auto relative flex flex-col items-center md:flex-row md:justify-between px-5"
+        >
+          <div class="max-w-[700px] md:max-w-[500px] my-auto">
+            <h1
+              class="text-[30px] text-[#fff] leading-[1.2] font-[Open_sans_condensed] mb-4 md:text-[36px]"
+            >
+              Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.
+            </h1>
+            <p class="text-[18px] text-[#fff] leading-[1.5] mb-9">
+              Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p
+              uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni
+              o’z ishining professionallariga ishonib topshiring.
+            </p>
+            <a
+              href="#"
+              class="text-[15px] text-white bg-[#de2e54] px-[24px] py-[10px] rounded-[8px] font-[Open_sans_condensed] tracking-[2px] border-2 border-[#de2e54] hover:text-[#de2e54] hover:bg-transparent tansition-color duration-300"
+              >QABULGA YOZILISH</a
+            >
+          </div>
+          <img
+            class="hidden mt-[90px] md:mb-[-30px] md:relative md:right-[0] md:block"
+            src="./img/soqoli.brat.png"
+            height="505px"
+            width="425px"
+            alt="Ulug`bek Azamatov"
+          />
+        </div>
+      </section>
+      <section class="px-5 mb-25 dark:bg-[#FFFFFF]">
+        <div
+          class="w-[100%] h-[100%] max-w-[1100px] m-auto flex items-center justify-center flex-col"
+        >
+          <h2
+            class="text-[36px] font-[Open_sans_condensed] text-center mt-25 mb-10 dark:text-[black]"
+          >
+            Xizmatlar
+          </h2>
+
+          <div class="flex flex-col gap-10 mb-15">
+            <div class="flex flex-col w-[100%] max-w-[865px] gap-8 md:flex-row">
+              <img
+                class="w-[100%] h-[300px] object-center rounded-[75px] md:w-[200px] md:h-[200px] md:rounded-[30px]"
+                src="https://ansormed.ilhomlandim.uz/img/hijama@2x.jpg"
+                alt="Hijoma"
+              />
+              <div class="flex flex-col gap-3 justify-center">
+                <h3
+                  class="text-[24px] font-[Open_sans_condensed] dark:text-[#fff]"
+                >
+                  Hijoma
+                </h3>
+                <p class="text-[16px] font-[Open_sans] dark:text-[black]">
+                  Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat
+                  qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar:
+                  «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19
+                  va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar
+                  kunlaridir).
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col w-[100%] max-w-[865px] gap-8 md:flex-row">
+              <img
+                class="w-[100%] h-[300px] object-center rounded-[75px] md:w-[200px] md:h-[200px] md:rounded-[30px]"
+                src="https://ansormed.ilhomlandim.uz/img/manual-therapy@2x.jpg"
+                alt="Hijoma"
+              />
+              <div class="flex flex-col gap-3 justify-center">
+                <h3
+                  class="text-[24px] font-[Open_sans_condensed] dark:text-[#fff]"
+                >
+                  Manual terapiya
+                </h3>
+                <p class="text-[16px] font-[Open_sans] dark:text-[black]">
+                  Manual terapiya Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Nulla ac metus placerat, pellentesque enim
+                  ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa
+                  sit amet elit viverra hendrerit.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col w-[100%] max-w-[865px] gap-8 md:flex-row">
+              <img
+                class="w-[100%] h-[300px] object-center rounded-[75px] md:w-[200px] md:h-[200px] md:rounded-[30px]"
+                src="https://ansormed.ilhomlandim.uz/img/therapy-byzuluk@2x.jpg"
+                alt="Hijoma"
+              />
+              <div class="flex flex-col gap-3 justify-center">
+                <h3
+                  class="text-[24px] font-[Open_sans_condensed] dark:text-[#fff]"
+                >
+                  Zuluk bilan davolash
+                </h3>
+                <p class="text-[16px] font-[Open_sans] dark:text-[black]">
+                  Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία —
+                  «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo
+                  medicinalis) yordamida davolash usuli. Fizioterapevtik
+                  muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar
+                  ushbu kichik sinf chuvchalchanglariga oid yagona tur
+                  hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col w-[100%] max-w-[865px] gap-8 md:flex-row">
+              <img
+                class="w-[100%] h-[300px] object-center rounded-[75px] md:w-[200px] md:h-[200px] md:rounded-[30px]"
+                src="https://ansormed.ilhomlandim.uz/img/natural@2x.jpg"
+                alt="Hijoma"
+              />
+              <div class="flex flex-col gap-3 justify-center">
+                <h3
+                  class="text-[24px] font-[Open_sans_condensed] dark:text-[#fff]"
+                >
+                  Tabiiy dori vositalari
+                </h3>
+                <p class="text-[16px] font-[Open_sans] dark:text-[black]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  ac metus placerat, pellentesque enim ac, rhoncus lectus.
+                  Maecenas et posuere lorem. Fusce sed massa sit amet elit
+                  viverra hendrerit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="text-[15px] text-white bg-[#de2e54] px-[24px] py-[10px] rounded-[8px] font-[Open_sans_condensed] tracking-[2px] border-2 border-[#de2e54] hover:text-[#de2e54] hover:bg-transparent tansition-color duration-300"
+            >QABULGA YOZILISH</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="bg-[#0eb4c1] px-5 py-5 min-h-[250px] flex dark:bg-[#0EB4C1]"
+      >
+        <div
+          class="w-[100%] h-[100%] max-w-[1100px] m-auto flex flex-col justify-center items-center gap-5"
+        >
+          <h2
+            class="text-[36px] text-white font-[Open_sans_condensed] text-center"
+          >
+            Qabulga ro’yxatdan o’ting
+          </h2>
+          <div class="flex gap-5 flex-col md:flex-row">
+            <a
+              href="#"
+              class="text-[15px] text-white tracking-[2px] uppercase border-2 font-semibold border-[#fff] rounded-[8px] px-[24px] py-[10px] hover:text-[#fff] hover:border-[#de2e54] hover:bg-[#de2e54] duration-300 text-center"
+              >Qo’ng’iroq qilish</a
+            >
+            <a
+              href="#"
+              class="text-[15px] text-white tracking-[2px] uppercase border-2 font-semibold border-[#fff] rounded-[8px] px-[24px] py-[10px] hover:text-[#fff] hover:border-[#de2e54] hover:bg-[#de2e54] duration-300 text-center"
+              >Telegramdan yozish</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#222] min-h-[100px] flex items-center justify-center">
+      <div
+        class="w-[100%] max-w-[1100px] m-auto px-5 py-5 gap-10 flex flex-col md:flex-row items-center md:justify-between"
+      >
+        <a href="#" class="flex items-center gap-4">
+          <img
+            class="rounded-full"
+            src="https://ansormed.ilhomlandim.uz/img/logo-icon@2x.jpg"
+            alt="logo"
+            width="50px"
+            height="50px"
+          />
+          <p
+            class="text-[25px] text-white hover:text-[#de2e54] tansition-color duration-300 font-[Open_sans] font-semibold"
+          >
+            AnsorMed
+          </p>
+        </a>
+        <ul class="flex gap-8 flex-col md:flex-row items-center">
+          <a
+            href="#"
+            class="text-[15px] text-white tracking-[2px] font-[Open_sans] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold"
+            >xizmatlar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] text-white tracking-[2px] font-[Open_sans] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold"
+            >dorilar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] text-white tracking-[2px] font-[Open_sans] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold"
+            >asal</a
+          >
+          <a
+            href="#"
+            class="text-[15px] text-white tracking-[2px] font-[Open_sans] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold"
+            >kontaktlar</a
+          >
+          <a
+            href="#"
+            class="text-[15px] text-white tracking-[2px] font-[Open_sans] uppercase hover:text-[#de2e54] tansition-color duration-300 font-semibold"
+            >blog</a
+          >
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      navbar = document.getElementById("navbar");
+
+      function toggler(e) {
+        if (e.checked) {
+          navbar.classList.remove("hidden");
+          navbar.classList.add("flex");
+        } else {
+          navbar.classList.add("hidden");
+          navbar.classList.remove("flex");
+        }
+      }
+
+      loader = document.getElementById("loader");
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          loader.classList.add("translate-y-[-100%]");
+          loader.classList.remove("translate-y-[0]");
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
